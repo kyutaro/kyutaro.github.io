@@ -1,0 +1,339 @@
+/* whole
+--------------------------------------------------------------------------------------------------------------- */
+
+* {
+    font-family: 'karla', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+*,
+*:before,
+*:after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEEEE;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* container
+--------------------------------------------------------------------------------------------------------------- */
+
+.container-lrg {
+    margin: auto;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.container-sml {
+    margin: auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+@media (max-width: 900px) {
+    .container-slider {
+        margin: 0 auto;
+        max-width: 70%;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 901px) {
+    .container-slider {
+        padding-top: 20px;
+        margin: 0 auto;
+        max-width: 37%;
+    }    
+}
+
+
+/* header
+--------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 901px) {
+    .header {
+        background: #ABA0CB;
+        background-image: url('../img/top.jpg');
+        background-size: cover; 
+        color: #000;
+        overflow: hidden;
+        height:100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        background: #ABA0CB;
+        background-image: url('../img/top_sp.jpg');
+        background-size: cover; 
+        color: #212222;
+        overflow: hidden;
+        height:100%;
+    }
+}
+
+.header-heading {
+    color: #212222;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    margin: 180px 0 0 0;
+
+}
+
+@media (max-width: 900px) {
+    .header-heading {
+        color: #212222;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 60px;
+    }
+}
+
+
+/* menu */
+
+.header-paragraph {
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 100;
+    font-weight: 600;
+}
+
+@media (min-width: 751px) {
+    .header-menu {
+        display: table;
+        margin-right: 20px;
+        margin-top: 46px;
+        width: 751px;
+    }
+    .header-menu-unit {
+        display: table-cell;
+        padding: 0px 10px;
+    }
+    .header-menu-link {
+        color: #212222;
+        cursor: pointer;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-menu {
+        list-style: none;
+    }
+    .header-menu-unit {
+        padding: 0px 10px;
+    }
+    .header-menu-link {
+        color: #212222;
+        font-size: 1.6em;
+        text-decoration: none;
+    }
+}
+
+
+/* contents
+--------------------------------------------------------------------------------------------------------------- */
+
+/* paragraph */
+
+.paragraph {
+    color: rgba(0, 0, 0, .8);
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 32px;
+}
+
+
+/* feature1 */
+
+.feature1 {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
+    padding: 90px 0;
+}
+
+.feature1-heading {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 68px;
+}
+
+.feature1-flex {
+    display: flex;
+}
+
+.feature1-centervertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature1-steps:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.feature1-emoji {
+    font-size: 40px;
+    height: 44px;
+    min-width: inherit;
+    position: absolute;
+    transform: translate3d(calc(-100% - 20px), 0, 0);
+    width: 44px;
+    z-index: 9999;
+}
+
+.feature1-subheading {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.feature1-illust-link {
+    color: #0000cc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .feature1-heading {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    .feature1-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature1-centervertical {
+        flex-direction: row;
+    }
+    .feature1 .col-6 {
+        width: 100%;
+    }
+    .feature1-steps {
+        padding: 0 20px;
+        width: 33.33%;
+    }
+    .feature1-emoji {
+        position: relative;
+        transform: none;
+    }
+    .feature1-subheading {
+        font-size: 26px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .feature1-centervertical {
+        flex-wrap: wrap;
+    }
+    .feature1-steps:nth-of-type(1) {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .feature1-steps:not(:nth-of-type(1)) {
+        width: 100%;
+    }
+}
+
+
+/* feature2 */
+
+.feature2 {
+    padding: 90px 0;
+    width: 100%;
+}
+
+.feature2-heading {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 68px;
+}
+
+.feature2-card {
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    margin-top: 40px;
+    min-height: 240px;
+    padding: 20px;
+}
+
+.feature2-card-content {
+    margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+    .feature2-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    .feature2-card {
+        min-height: inherit;
+    }
+}
+
+
+/* pagetop
+--------------------------------------------------------------------------------------------------------------- */
+.pagetop {
+    bottom: 60px;
+    display: none;
+    height: 60px;
+    position: fixed;
+    right: 150px;
+    width: 60px;    
+}
+
+.pagetop-link {
+    background: url(../img/pagetop.png) no-repeat 0 0;
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+.pagetop-link:hover {
+    background: url(../img/pagetop-on.png) no-repeat 0 0;
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+/* footer
+--------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+    background: #232323;
+    color: white;
+    padding: 90px 0;
+}
+
+.footer-heading {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 68px;
+}
+
+@media (max-width: 900px) {
+    .footer-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.footer-paragraph {
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 32px;
+}

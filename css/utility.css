@@ -1,0 +1,540 @@
+/*
+ *
+ * 汎用的に利用できるcss
+ *
+ */
+
+/* background-color
+--------------------------------------------------------------------------------------------------------------- */
+.background_black {background-color: #000000 !important;}
+.background_gray {background-color: #808080 !important;}
+.bacground_silver {background-color: #C0C0C0 !important;}
+.background_white {background-color: #ffffff !important;}
+.background_blue {background-color: #0000ff !important;}
+.background_darkblue {background-color: #00008b !important;}
+.background_skyblue {background-color: #87ceeb !important;}
+.background_cyan {background-color: #00ffff !important;}
+.background_green {background-color: #008000 !important;}
+.background_darkgreen {background-color: #006400 !important;}
+.background_lightgreen {background-color: #90ee90s !important;}
+.background_greenyellow {background-color: #adff2f !important;}
+.background_yellow {background-color: #ffff00 !important;}
+.background_orange {background-color: #ffa500 !important;}
+.background_darkred {background-color: #8b0000 !important;}
+.background_darkred {background-color: #a52a2a !important;}
+.background_red {background-color: #ff0000 !important;}
+.background_pink {background-color: #ffc0cb !important;}
+.background_magenta {background-color: #f00ff !important;}
+.background_violet {background-color: #ee82ee !important;}
+.background_purple {background-color: #800080 !important;}
+
+/* display
+--------------------------------------------------------------------------------------------------------------- */
+.display_none {display: none !important;}
+
+/* float_clear
+--------------------------------------------------------------------------------------------------------------- */
+.float_clear { clear:both !important;}
+
+/* font-color
+--------------------------------------------------------------------------------------------------------------- */
+.font_black {color: #000000 !important;}
+.font_gray {color: #808080 !important;}
+.font_white {color: #ffffff !important;}
+.font_blue {color: #0000ff !important;}
+.font_darkblue {color: #00008b !important;}
+.font_skyblue {color: #87ceeb !important;}
+.font_cyan {color: #00ffff !important;}
+.font_green {color: #008000 !important;}
+.font_darkgreen {color: #006400 !important;}
+.font_lightgreen {color: #90ee90 !important;}
+.font_greenyellow {color: #adff2f !important;}
+.font_yellow {color: #ffff00 !important;}
+.font_orange {color: #ffa500 !important;}
+.font_darkred {color: #8b0000 !important;}
+.font_darkred {color: #a52a2a !important;}
+.font_red {color: #ff0000 !important;}
+.font_pink {color: #ffc0cb !important;}
+.font_magenta {color: #ff00ff !important;}
+.font_violet {color: #ee82ee !important;}
+.font_purple {color: #800080 !important;}
+
+/* font-size
+--------------------------------------------------------------------------------------------------------------- */
+.font_size_zero_point_five {font-size: 0.5em !important;}
+.font_size_zero_point_six {font-size: 0.6em !important;}
+.font_size_zero_point_seven {font-size: 0.7em !important;}
+.font_size_zero_point_eight {font-size: 0.8em !important;}
+.font_size_zero_point_nine {font-size: 0.9em !important;}
+.font_size_one {font-size: 1em !important;}
+.font_size_one_point_one {font-size: 1.1em !important;}
+.font_size_one_point_two {font-size: 1.2em !important;}
+.font_size_one_point_three {font-size: 1.3em !important;}
+.font_size_one_point_four {font-size: 1.4em !important;}
+.font_size_one_point_five {font-size: 1.5em !important;}
+.font_size_one_point_six {font-size: 1.6em !important;}
+.font_size_one_point_seven {font-size: 1.7em !important;}
+.font_size_one_point_eight {font-size: 1.8em !important;}
+.font_size_one_point_naine {font-size: 1.9em !important;}
+.font_size_two {font-size: 2em !important;}
+.font_size_two_point_five {font-size: 2.5em !important;}
+
+/* font-style
+--------------------------------------------------------------------------------------------------------------- */
+.font_style_normal {font-style: normal !important;}
+.font_style_italic {font-style: italic !important;}
+.font_style_oblique {font-style: oblique !important;}
+
+/* font-weight
+--------------------------------------------------------------------------------------------------------------- */
+.font_weight_normal {font-weight: normal !important;}
+.font_weight_bold {font-weight: bold !important;}
+
+/* grid
+--------------------------------------------------------------------------------------------------------------- */
+/* このdisplay-rowを使うと、PCの時(751px以上)はグリッド、spの時(750以下)は一列並びになる */
+.display-row {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 750px) {
+    .display-row {
+        display: block;
+    }
+}
+
+.col-1 {
+    padding: 0 20px;
+    width: 8.333333%;
+}
+.col-2 {
+    padding: 0 20px;
+    width: 16.666667%;
+}
+.col-3 {
+    padding: 0 20px;
+    width: 25%;
+}
+.col-4 {
+    padding: 0 20px;
+    width: 33.333333%;
+}
+.col-5 {
+    padding: 0 20px;
+    width: 41.666667%;
+}
+.col-6 {
+    padding: 0 20px;
+    width: 50%;
+}
+.col-7 {
+    padding: 0 20px;
+    width: 58.333333%;
+}
+.col-8 {
+    padding: 0 20px;
+    width: 66.666667%;
+}
+.col-9 {
+    padding: 0 20px;
+    width: 75%;
+}
+.col-10 {
+    padding: 0 20px;
+    width: 83.333333%;
+}
+.col-11 {
+    padding: 0 20px;
+    width: 91.666667%;
+}
+.col-12 {
+    padding: 0 20px;
+    width: 100%;
+}
+@media (min-width: 901px) {
+    .col-pc-1 {
+        padding: 0 20px;
+        width: 8.333333%;
+    }
+    .col-pc-2 {
+        padding: 0 20px;
+        width: 16.666667%;
+    }
+    .col-pc-3 {
+        padding: 0 20px;
+        width: 25%;
+    }
+    .col-pc-4 {
+        padding: 0 20px;
+        width: 33.333333%;
+    }
+    .col-pc-5 {
+        padding: 0 20px;
+        width: 41.666667%;
+    }
+    .col-pc-6 {
+        padding: 0 20px;
+        width: 50%;
+    }
+    .col-pc-7 {
+        padding: 0 20px;
+        width: 58.333333%;
+    }
+    .col-pc-8 {
+        padding: 0 20px;
+        width: 66.666667%;
+    }
+    .col-pc-9 {
+        padding: 0 20px;
+        width: 75%;
+    }
+    .col-pc-10 {
+        padding: 0 20px;
+        width: 83.333333%;
+    }
+    .col-pc-11 {
+        padding: 0 20px;
+        width: 91.666667%;
+    }
+    .col-pc-12 {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+@media (min-width: 751px) and (max-width: 900px) {
+    .col-tab-1 {
+        padding: 0 20px;
+        width: 8.333333%;
+    }
+    .col-tab-2 {
+        padding: 0 20px;
+        width: 16.666667%;
+    }
+    .col-tab-3 {
+        padding: 0 20px;
+        width: 25%;
+    }
+    .col-tab-4 {
+        padding: 0 20px;
+        width: 33.333333%;
+    }
+    .col-tab-5 {
+        padding: 0 20px;
+        width: 41.666667%;
+    }
+    .col-tab-6 {
+        padding: 0 20px;
+        width: 50%;
+    }
+    .col-tab-7 {
+        padding: 0 20px;
+        width: 58.333333%;
+    }
+    .col-tab-8 {
+        padding: 0 20px;
+        width: 66.666667%;
+    }
+    .col-tab-9 {
+        padding: 0 20px;
+        width: 75%;
+    }
+    .col-tab-10 {
+        padding: 0 20px;
+        width: 83.333333%;
+    }
+    .col-tab-11 {
+        padding: 0 20px;
+        width: 91.666667%;
+    }
+    .col-tab-12 {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .col-sp-1 {
+        padding: 0 20px;
+        width: 8.333333%;
+    }
+    .col-sp-2 {
+        padding: 0 20px;
+        width: 16.666667%;
+    }
+    .col-sp-3 {
+        padding: 0 20px;
+        width: 25%;
+    }
+    .col-sp-4 {
+        padding: 0 20px;
+        width: 33.333333%;
+    }
+    .col-sp-5 {
+        padding: 0 20px;
+        width: 41.666667%;
+    }
+    .col-sp-6 {
+        padding: 0 20px;
+        width: 50%;
+    }
+    .col-sp-7 {
+        padding: 0 20px;
+        width: 58.333333%;
+    }
+    .col-sp-8 {
+        padding: 0 20px;
+        width: 66.666667%;
+    }
+    .col-sp-9 {
+        padding: 0 20px;
+        width: 75%;
+    }
+    .col-sp-10 {
+        padding: 0 20px;
+        width: 83.333333%;
+    }
+    .col-sp-11 {
+        padding: 0 20px;
+        width: 91.666667%;
+    }
+    .col-sp-12 {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 901px) {
+    /*pc-grid*/
+    .col-pc-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .col-pc-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .col-pc-offset-3 {
+        margin-left: 25%;
+    }
+    .col-pc-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .col-pc-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .col-pc-offset-6 {
+        margin-left: 50%;
+    }
+    .col-pc-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .col-pc-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .col-pc-offset-9 {
+        margin-left: 75%;
+    }
+    .col-pc-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .col-pc-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .col-pc-offset-12 {
+        margin-left: 100%;
+    }
+}
+@media (min-width: 751px) and (max-width: 900px) {
+    /*tablet-grid*/
+    .col-tab-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .col-tab-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .col-tab-offset-3 {
+        margin-left: 25%;
+    }
+    .col-tab-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .col-tab-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .col-tab-offset-6 {
+        margin-left: 50%;
+    }
+    .col-tab-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .col-tab-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .col-tab-offset-9 {
+        margin-left: 75%;
+    }
+    .col-tab-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .col-tab-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .col-tab-offset-12 {
+        margin-left: 100%;
+    }
+}
+@media (max-width: 750px) {
+    /* sp-grid */
+    .col-sp-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .col-sp-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .col-sp-offset-3 {
+        margin-left: 25%;
+    }
+    .col-sp-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .col-sp-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .col-sp-offset-6 {
+        margin-left: 50%;
+    }
+    .col-sp-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .col-sp-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .col-sp-offset-9 {
+        margin-left: 75%;
+    }
+    .col-sp-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .col-sp-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .col-sp-offset-12 {
+        margin-left: 100%;
+    }
+}
+
+
+
+/* indent
+--------------------------------------------------------------------------------------------------------------- */
+.indent_one_letter {padding-left:1em !important;}
+
+/* letter-spacing
+--------------------------------------------------------------------------------------------------------------- */
+.letter_spacing_one {letter-spacing: 1em !important;}
+.letter_spacing_two {letter-spacing: 2em !important;}
+
+/* margin
+--------------------------------------------------------------------------------------------------------------- */
+.mt0 {margin-top: 0px !important;}
+.mt10 {margin-top: 10px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+.mb0 {margin-bottom: 0px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.mr0 {margin-right: 0px !important;}
+.mr10 {margin-right: 10px !important;}
+.mr20 {margin-right: 20px !important;}
+.mr30 {margin-right: 30px !important;}
+.mr40 {margin-right: 40px !important;}
+.mr50 {margin-right: 50px !important;}
+.ml0 {margin-left: 0px !important;}
+.ml10 {margin-left: 10px !important;}
+.ml20 {margin-left: 20px !important;}
+.ml30 {margin-left: 30px !important;}
+.ml40 {margin-left: 40px !important;}
+.ml50 {margin-left: 50px !important;}
+
+/* opacity
+--------------------------------------------------------------------------------------------------------------- */
+/* 該当項目全体を薄くして、編集不可のUIを提供する */
+.status_delete {
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+#opacity_one > p {
+    opacity: 1.0 !important;
+}
+
+/* padding
+--------------------------------------------------------------------------------------------------------------- */
+.pt0 {padding-top: 0 !important;}
+.pt10 {padding-top: 10px !important;}
+.pt20 {padding-top: 20px !important;}
+.pt30 {padding-top: 30px !important;}
+.pt40 {padding-top: 40px !important;}
+.pt50 {padding-top: 50px !important;}
+.pb0 {padding-bottom: 0 !important;}
+.pb10 {padding-bottom: 10px !important;}
+.pb20 {padding-bottom: 20px !important;}
+.pb30 {padding-bottom: 30px !important;}
+.pb40 {padding-bottom: 40px !important;}
+.pb50 {padding-bottom: 50px !important;}
+.pr0 {padding-right: 0 !important;}
+.pr10 {padding-right: 10px !important;}
+.pr20 {padding-right: 20px !important;}
+.pr30 {padding-right: 30px !important;}
+.pr40 {padding-right: 40px !important;}
+.pr50 {padding-right: 50px !important;}
+.pl0 {padding-left: 0 !important;}
+.pl10 {padding-left: 10px !important;}
+.pl20 {padding-left: 20px !important;}
+.pl30 {padding-left: 30px !important;}
+.pl40 {padding-left: 40px !important;}
+.pl50 {padding-left: 50px !important;}
+
+
+/* text-decoration
+--------------------------------------------------------------------------------------------------------------- */
+.text_underline {text-decoration: underline !important;}
+.text_underline_none {text-decoration: none !important;}
+.text_overline {text-decoration: overline !important;}
+.text_line_through {text-decoration: line-through !important;}
+
+/* text-indent
+--------------------------------------------------------------------------------------------------------------- */
+.text_indent_one {text-indent: 1em !important;}
+.text_indent_two {text-indent: 2em !important;}
+
+/* text-align
+--------------------------------------------------------------------------------------------------------------- */
+.text-center {text-align: center !important;}
+.text-left {text-align: left !important;}
+.text-right {text-align: right !important;}
+
+/* text-shadow
+--------------------------------------------------------------------------------------------------------------- */
+.text-shadow {
+    text-shadow: 2px 2px 1px #000,
+                 -2px 2px 1px #000,
+                 2px -2px 1px #000,
+                 -2px -2px 1px #000;
+}
+
+/* width
+--------------------------------------------------------------------------------------------------------------- */
+.width_per_10 {width: 10% !important;}
+.width_per_20 {width: 20% !important;}
+.width_per_30 {width: 30% !important;}
+.width_per_40 {width: 40% !important;}
+.width_per_50 {width: 50% !important;}
+.width_per_60 {width: 60% !important;}
+.width_per_70 {width: 70% !important;}
+.width_per_80 {width: 80% !important;}
+.width_per_90 {width: 90% !important;}
+.width_per_100 {width: 100% !important;}

@@ -1,0 +1,415 @@
+<html>
+
+<head>
+    <title>
+        ろじうらエンジニアのポートフォリオ
+    </title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/devices.css">
+    <link rel="stylesheet" type="text/css" href="css/utility.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/bxslider/jquery.bxslider.min.css" rel="stylesheet" />
+    <link href="css/colorbox/colorbox.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script>
+        $(function() {
+            $('.bxslider').bxSlider({
+                slideWidth: 200,
+                minSlides: 2,
+                maxSlides: 3,
+                slideMargin: 10
+            });
+        });
+        $(function() {
+            $(".single").colorbox({
+            maxWidth:"90%",
+            maxHeight:"90%",
+            opacity: 0.7
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container-sml">
+            <div class="col-12">
+                <h1 class="header-heading text-center">
+                    とある<br> ろじうらエンジニアの雑記帖
+                </h1>
+            </div>
+        </div>
+        <div class="container-sml mt20">
+            <div class="col-12 text-center">
+                <h2 class="header-paragraph">
+                    自己紹介用サイトです。<br> これまでに経験したことや、個人的に制作したWebサイトを諸々掲載しています。
+                </h2>
+            </div>
+            <div class="col-sp-offset-3 col-9 mt20 mr20 pl0 pr10">
+                <ul class="header-menu">
+                    <li class="header-menu-unit">
+                        <a class="header-menu-link" onclick="toProfile();">
+                            <i class="fa fa-user-circle mr20" aria-hidden="true"></i> Profile
+                        </a>
+                    </li>
+                    <li class="header-menu-unit">
+                        <a class="header-menu-link" onclick="toExperience();">
+                            <i class="fa fa-desktop mr20" aria-hidden="true"></i> Experience
+                        </a>
+                    </li>
+                    <li class="header-menu-unit">
+                        <a class="header-menu-link" onclick="toOther();">
+                            <i class="fa fa-square-o mr20" aria-hidden="true"></i> Other
+                        </a>
+                    </li>
+                    <li class="header-menu-unit">
+                        <a class="header-menu-link" onclick="toWork();">
+                            <i class="fa fa-pencil mr20" aria-hidden="true"></i> Work
+                        </a>
+                    </li>
+                    <li class="header-menu-unit">
+                        <a class="header-menu-link" onclick="toIllust();">
+                            <i class="fa fa-picture-o mr20" aria-hidden="true"></i> Illust
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <div id="Profile-block" class="feature1">
+        <div class="container-sml text-center">
+            <div class="col-12">
+                <h3 id="Profile" class="feature1-heading">
+                    <i class="fa fa-user-circle mr20" aria-hidden="true"></i> Profile
+                </h3>
+            </div>
+        </div>
+        <div class="container-lrg feature1-flex mt20">
+            <div class="col-pc-offset-3 col-6 feature1-centervertical">
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            🎓
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        自己紹介
+                    </h3>
+                    <p class="mt10">
+                        <img src="img/self-portrait.jpg" class="320" alt="自画像">
+                    </p>
+                    <p class="paragraph mt10">
+                        <ul>
+                            <li>名前：今林久志</li>
+                            <li>HN：きゅーたろう</li>
+                            <li>出身：福岡</li>
+                        </ul>
+                        [概略]<br> 大学卒業後、福岡でエンジニアをやっています。
+                        <br> 最近、健康のため休日に走る日々..
+                        <br> ほっこりするドラマやアニメ、紀行番組・地域紹介番組とか好きです。よろしくお願いします。
+                    </p>
+                </div>
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            👍
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        趣味
+                    </h3>
+                    <p class="paragraph mt10">
+                        <ul>
+                            <li>
+                                絵を描く事
+                                <ul>
+                                    <li>下の<a class="feature1-illust-link" onclick="toIllust();">Illust</a>に描いたイラストがあります</li>
+                                </ul>
+                            </li>
+                            <li>
+                                旅行
+                                <ul>
+                                    <li>国内、国外どちらも好きです</li>
+                                    <li>特に京都によく行っています。最近は尾道、神戸あたりに行こうかと画策中</li>
+                                </ul>
+                            </li>
+                            <li>
+                                読書
+                                <ul>
+                                    <li>森見登美彦の作品が好きで、新作が出ては読んでいます</li>
+                                    <li>ここ数年は古典文学やミステリー、伝奇系を読む傾向があります。以前は歴史小説なども読んでました(宮城谷昌光とか)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            👦
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        各種アカウント
+                    </h3>
+                    <p class="paragraph mt10">
+                        <a href="https://github.com/kyutaro" target="_blank"><i class="fa fa-github  mr10" aria-hidden="true"></i>GitHub</a>
+                        <span class="ml10">
+                    <a href="http://qiita.com/kyutaro" target="_blank">Qiita</a>
+                </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature1">
+        <div class="container-sml text-center">
+            <div class="col-12">
+                <h3 id="Experience" class="feature1-heading">
+                    <i class="fa fa-desktop mr20" aria-hidden="true"></i> Experience
+                </h3>
+            </div>
+        </div>
+        <div class="container-lrg feature1-flex mt20">
+            <div class="col-pc-offset-3 col-6 feature1-centervertical">
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            💻
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        仕事
+                    </h3>
+                    <p class="paragraph mt10">
+                        <ul class="paragraph">
+                            <li>Wordpressを使ったサイト構築</li>
+                            <li>LAMPによるサーバ環境の構築</li>
+                            <li>ECCUBE(2系、3系)を使ったサイト構築、リニューアル</li>
+                            <li>サーバ移行経験など</li>
+                        </ul>
+                        <br> おおよそどの案件でも詳細な仕様の策定(画面設計書作成など諸々)、環境構築、プログラムなどを担当してきました。
+                    </p>
+                </div>
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            💻
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        私的
+                    </h3>
+                    <p class="paragraph mt10">
+                        他、実際の案件では使ってないですが、下記は学習などで触ったりしたことがあります。<br>
+                        <ul class="paragraph">
+                            <li>
+                                Laravel
+                                <ul class="paragraph">
+                                    <li>下記の制作物の<a href="http://www.digivel.net" target="_blank">digivel(外部リンク)</a>はLaravelにて作成しました</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            💻
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        その他
+                    </h3>
+                    <p class="paragraph mt10">
+                        数えるほどですが、簡単なHTMLコーディングの経験があります。<br>
+                        <ul class="paragraph">
+                            <li>デザインカンプからHTMLを起す程度のことを何度か経験しました</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature1">
+        <div class="container-sml text-center">
+            <div class="col-12">
+                <h3 id="Other" class="feature1-heading">
+                    <i class="fa fa-square-o mr20" aria-hidden="true"></i> Other
+                </h3>
+            </div>
+        </div>
+        <div class="container-lrg feature1-flex mt20">
+            <div class="col-pc-offset-3 col-6 feature1-centervertical">
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            👓
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        基本スタンス
+                    </h3>
+                    <p class="paragraph mt10">
+                        <span class="font_size_one_point_three">シンプルイズベスト。</span>
+                        <br> 自分でサイトを作る時も、コードを書く時も「なるべく明快に、誰が見ても分かりやすいように」を意識して書いてます。
+                        <br> そういうスタンスなのは単純にシンプルなのが好きということもありますし、メリットを感じているからでもあります(サイトのどこを見ればいいか分かりやすい、改修・保守もしやすい、ストレスがたまらない、etc..)。
+                        <br> とはいうものの、祭りや黎明期のサイトとかそういった混沌とした雰囲気は好きです。
+                    </p>
+                </div>
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            🔧
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        よく使っている技術・ツール
+                    </h3>
+                    <p class="paragraph mt10">
+                        [言語系]<br> <span class="font_size_one_point_four">PHP、MySQL、</span>HTML5、CSS3、javascriptなど
+                        <br> [CMS]
+                        <br> <span class="font_size_one_point_four">wordpress、ECCUBE2、3系</span>
+                        <br> [FW]
+                        <br> <span class="font_size_one_point_three">Laravel</span>
+                        <br> [環境周り]
+                        <br> Linux、CentOS、Apache http Server、vagrantなど
+                        <br> [ファイル管理]
+                        <br> git(sourcetree利用)、svn(TortoiseSVN利用)、など
+                        <br> [エディタ、IDE]
+                        <br> Brackets、、サクラエディタ、NetBeansなど
+                        <br>
+                    </p>
+                </div>
+                <div class="feature1-steps">
+                    <div class="feature1-emoji">
+                        <b>
+                            🔍
+                        </b>
+                    </div>
+                    <h3 class="feature1-subheading">
+                        技術関連の関心
+                    </h3>
+                    <p class="paragraph mt10">
+                        SPAを始めとする最近のWeb技術に興味を惹かれています。<br> また、Webによって出来る表現の可能性にも心惹かれています。
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature1">
+        <div class="container-sml text-center">
+            <div class="col-12">
+                <h4 id="Work" class="feature2-heading">
+                    <i class="fa fa-pencil mr20" aria-hidden="true"></i> Work,Post
+                </h4>
+            </div>
+        </div>
+        <div class="container-lrg display-row">
+            <div class="col-4 col-sp-12">
+                <div class="feature2-card">
+                    <b>digivel</b>
+                    <div class="feature2-card-content">
+                        <img src="img/card01.jpg" alt="" style="width:100%;">
+                        <p class="paragraph mt10">
+                            自作の小説投稿サイトです(デモ版)。<br> 只の小説投稿ではなく、音声や画像を付けることが出来るので、サ○ンドノベルのような臨場感や演出が可能です。
+                            <br> コチラから遷移出来ます→
+                            <a href="http://www.digivel.net" target="_blank">digivelへ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-sp-12">
+                <div class="feature2-card">
+                    <b>Qiita 投稿</b>
+                    <div class="feature2-card-content">
+                        <p class="paragraph mt10">
+                          下記投稿しました。<br>
+                          <a href="https://qiita.com/kyutaro/items/da070013cf9e38a7e773" target="_blank">
+                            eccube3の基礎知識(知っておくと役に立つこと)
+                          </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="col-4 col-sp-12">
+                <div class="feature2-card">
+                    <b>digivel</b>
+                    <div class="feature2-card-content">
+                        <img src="img/slide01.jpg" alt="" style="width:100%;">
+                        <p class="paragraph mt10">
+                            自作の小説投稿サイトです(デモ版)。<br> 只の小説投稿ではなく、音声や画像を付けることが出来るので、サ○ンドノベルのような臨場感や演出が可能です。
+                            <br> コチラから遷移出来ます→
+                            <a href="http://www.digivel.net" target="_blank">digivelへ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+    <div class="feature2">
+        <div class="container-sml text-center">
+            <div class="col-12">
+                <h4 id="Illust" class="feature2-heading">
+                    <i class="fa fa-picture-o mr20" aria-hidden="true"></i> Illust
+                </h4>
+            </div>
+        </div>
+        <div class="container-slider feature2-content">
+            <div class="bxslider">
+                <li>
+                    <a class="single" href="img/slide-01.jpg">
+                        <img src="img/slide-01-thumb.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a class="single" href="img/slide-02.jpg">
+                        <img src="img/slide-02-thumb.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a class="single" href="img/slide-03.jpg">
+                        <img src="img/slide-03-thumb.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a class="single" href="img/slide-04.jpg">
+                        <img src="img/slide-04-thumb.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a class="single" href="img/slide-05.jpg">
+                        <img src="img/slide-05-thumb.jpg" />
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <p id="pagetop" class="pagetop" style="display: block;" onclick="toPageTop();">
+        <a class="pagetop-link" href="#header"></a>
+    </p>
+    <div class="footer">
+        <div class="container-sml text-center">
+            <div class="col-12">
+                <h5 class="footer-heading">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span class="ml20">CONTACT</span>
+                </h5>
+                <h2 class="footer-paragraph">
+                    お問い合わせ等は下記よりお願いいたします。
+                    <br> ↓
+                    <br>
+                    yoshithune1192@gmail.com
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
