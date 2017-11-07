@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------------------------------------- */
 
 * {
-    font-family: 'karla', sans-serif;
+    font-family: font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
@@ -290,7 +290,7 @@ body {
 .pagetop {
     bottom: 60px;
     display: none;
-    height: 60px;
+    height: 20px;
     position: fixed;
     right: 150px;
     width: 60px;    
